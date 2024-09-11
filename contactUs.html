@@ -263,38 +263,37 @@
             <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
                 <div>
                     <h4 class="text-primary">Send Your Message</h4>
-                          <form>
-                        <div class="row g-3">
-                            <div class="col-lg-12 col-xl-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
+                          <form id="contactForm" action="send_contactFormEmail.php" method="POST">
+                            <div class="row g-3">
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0" id="name" name="name" placeholder="Your Name" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control border-0" id="phone" name="phone" placeholder="Phone" required>
+                                        <label for="phone">Your Phone</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 ">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control border-0" id="email" name="email" placeholder="Your Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control border-0" placeholder="Leave a message here" id="message" name="message" style="height: 100px" required></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" name="submit_Contact" class="btn btn-primary w-50 py-3">Send Message</button>
                                 </div>
                             </div>
-                            
-                            <div class="col-lg-12 col-xl-6">
-                                <div class="form-floating">
-                                    <input type="phone" class="form-control border-0" id="phone" placeholder="Phone">
-                                    <label for="phone">Your Phone</label>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 ">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control border-0" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-50 py-3">Send Message</button>
-                            </div>
-                        </div>
                     </form>
                 </div>
             </div>
