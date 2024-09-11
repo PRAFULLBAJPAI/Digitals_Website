@@ -1,0 +1,401 @@
+.digitalsBlue{
+    color: #028bd7;
+}
+
+.emailColor{
+    color: #ea4335;
+}
+
+.digitalsBlue:hover{
+    color: #ffffff;
+}
+
+.emailColor:hover{
+    color: #ffffff;
+}
+
+.digitals{
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.digitals i{
+    width:18px;
+}
+
+.greenIcon{
+    color: #50C878;
+}
+
+ .mj-2 {
+    position: relative;
+    padding-left: 1.3em; 
+    margin-bottom: 0em; 
+}
+.mj-2 i {
+    position: absolute;
+    left: 0; 
+    top: 10px; 
+} 
+
+.digitals::-webkit-scrollbar {
+    width: 2px; 
+  }
+
+
+  /* Button styling */
+.enquire-btn {
+    position: fixed;
+    bottom: 50%;
+    right: -45px;
+    z-index: 1000;
+    transform: rotate(90deg);
+  }
+  
+  .enquire-btn button {
+    padding: 5px 15px;
+    background-color: #028bd7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+/* -----------------------------------Milestone-------------------------------- */
+
+ 
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    position: relative;
+  }
+  .timeline__event {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    border-radius: 6px;
+    align-self: center;
+    width: 50vw;
+  }
+  .timeline__event:nth-child(2n + 1) {
+    flex-direction: row-reverse;
+  }
+  .timeline__event:nth-child(2n + 1) .timeline__event__date {
+    border-radius: 0 6px 6px 0;
+  }
+  .timeline__event:nth-child(2n + 1) .timeline__event__content {
+    border-radius: 6px 0 0 6px;
+  }
+  .timeline__event:nth-child(2n + 1) .timeline__event__icon:before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: #ea8007;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    right: auto;
+    z-index: -1;
+    transform: translateX(-50%);
+    animation: fillTop 2s forwards 4s ease-in-out;
+  }
+  .timeline__event:nth-child(2n + 1) .timeline__event__icon:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #ea8007;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    top: 50%;
+    left: auto;
+    transform: translateY(-50%);
+    animation: fillLeft 2s forwards 4s ease-in-out;
+  }
+  .timeline__event__title {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ea8007;
+    letter-spacing: 1px;
+  }
+  .timeline__event__content {
+    padding: 20px;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    background: #fff;
+    width: calc(40vw - 84px);
+    border-radius: 0 6px 6px 0;
+  }
+  .timeline__event__date {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: #ea8007;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 0 20px;
+    border-radius: 6px 0 0 6px;
+  }
+  .timeline__event__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ea8007;
+    padding: 20px;
+    align-self: center;
+    margin: 0 20px;
+    background: #ffb9b0;
+    border-radius: 100%;
+    width: 40px;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    padding: 40px;
+    height: 40px;
+    position: relative;
+  }
+  .timeline__event__icon i {
+    font-size: 32px;
+  }
+  .timeline__event__icon:before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: #ea8007;
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fillTop 2s forwards 4s ease-in-out;
+  }
+  .timeline__event__icon:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #ea8007;
+    position: absolute;
+    left: 0%;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: fillLeftOdd 2s forwards 4s ease-in-out;
+  }
+  .timeline__event__description {
+    flex-basis: 60%;
+  }
+  .timeline__event--type2:after {
+    background: #555ac0;
+  }
+  .timeline__event--type2 .timeline__event__date {
+    color: #d3e6ff;
+    background: #555ac0;
+  }
+  .timeline__event--type2:nth-child(2n + 1) .timeline__event__icon:before,
+  .timeline__event--type2:nth-child(2n + 1) .timeline__event__icon:after {
+    background: #87bbfe;
+  }
+  .timeline__event--type2 .timeline__event__icon {
+    background: #87bbfe;
+    color: #555ac0;
+  }
+  .timeline__event--type2 .timeline__event__icon:before,
+  .timeline__event--type2 .timeline__event__icon:after {
+    background: #87bbfe;
+  }
+  .timeline__event--type2 .timeline__event__title {
+    color: #555ac0;
+  }
+  .timeline__event--type3:after {
+    background: #ea8007;
+  }
+  .timeline__event--type3 .timeline__event__date {
+    color: #ffffff;
+    background-color: #ea8007;
+  }
+  .timeline__event--type3:nth-child(2n + 1) .timeline__event__icon:before,
+  .timeline__event--type3:nth-child(2n + 1) .timeline__event__icon:after {
+    background: #ffb9b0;
+  }
+  .timeline__event--type3 .timeline__event__icon {
+    background: #ffb9b0;
+    color: #ea8007;
+  }
+  .timeline__event--type3 .timeline__event__icon:before,
+  .timeline__event--type3 .timeline__event__icon:after {
+    background: #ffb9b0;
+  }
+  .timeline__event--type3 .timeline__event__title {
+    color: #ea8007;
+  }
+  .timeline__event:last-child .timeline__event__icon:before {
+    content: none;
+  }
+  @media (max-width: 786px) {
+    .timeline__event {
+      flex-direction: column;
+      align-self: center;
+    }
+    .timeline__event__content {
+      width: 100%;
+    }
+    .timeline__event__icon {
+      border-radius: 6px 6px 0 0;
+      width: 100%;
+      margin: 0;
+      box-shadow: none;
+    }
+    .timeline__event__icon:before,
+    .timeline__event__icon:after {
+      display: none;
+    }
+    .timeline__event__date {
+      border-radius: 0;
+      padding: 20px;
+    }
+    .timeline__event:nth-child(2n + 1) {
+      flex-direction: column;
+      align-self: center;
+    }
+    .timeline__event:nth-child(2n + 1) .timeline__event__date {
+      border-radius: 0;
+      padding: 20px;
+    }
+    .timeline__event:nth-child(2n + 1) .timeline__event__icon {
+      border-radius: 6px 6px 0 0;
+      margin: 0;
+    }
+  }
+  @keyframes fillLeft {
+    100% {
+      right: 100%;
+    }
+  }
+  @keyframes fillTop {
+    100% {
+      top: 100%;
+    }
+  }
+  @keyframes fillLeftOdd {
+    100% {
+      left: 100%;
+    }
+  }
+  
+  /* CCTV---Our Products */
+
+  .cctv-menus ul {
+   
+    padding: 0;
+    text-align: center;
+  }
+  
+  .cctv-menus ul li {
+    display: inline-block;
+    padding: 5px 10px;
+  }
+  
+  .cctv-menus ul li a {
+    text-decoration: none;
+    
+    color: inherit;
+   
+  }
+  
+  .cctv-menus ul li a:hover {
+    color: #000;
+
+  }
+  
+  
+  @media (max-width: 600px) {
+    .cctv-menus ul {
+      padding: 0;
+      margin: 0;
+     
+    }
+  
+    .cctv-menus ul li {
+      display: block;
+      text-align: center;
+  
+      padding: 5px 10px;
+      margin-left: 10px;
+   
+    }
+  }
+
+
+
+  /* NAVBAR SUBMENU */
+
+
+  
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+
+#cctv-submenu, #fire-safety-submenu, #intrusion-detection-submenu,
+#entrance-management-submenu, #innovative-products-submenu, #new-age-solutions-submenu {
+  display: none;
+  position: absolute;
+  border: 2px solid #000;
+}
+
+
+#cctv-submenu, #fire-safety-submenu, #intrusion-detection-submenu {
+  left: 100%;
+  top: 5px;
+}
+
+#entrance-management-submenu, #innovative-products-submenu, #new-age-solutions-submenu {
+  left: 100%;
+  top: 100px;
+}
+
+
+#cctv:hover + #cctv-submenu,
+#cctv-submenu:hover {
+  display: block;
+}
+
+#fire-safety:hover + #fire-safety-submenu,
+#fire-safety-submenu:hover {
+  display: block;
+}
+
+#intrusion-detection:hover + #intrusion-detection-submenu,
+#intrusion-detection-submenu:hover {
+  display: block;
+}
+
+#entrance-management:hover + #entrance-management-submenu,
+#entrance-management-submenu:hover {
+  display: block;
+}
+
+#innovative-products:hover + #innovative-products-submenu,
+#innovative-products-submenu:hover {
+  display: block;
+}
+
+#new-age-solutions:hover + #new-age-solutions-submenu,
+#new-age-solutions-submenu:hover {
+  display: block;
+}
+
+
+@media (max-width: 990px) {
+  #cctv-submenu, #fire-safety-submenu, #intrusion-detection-submenu,
+  #entrance-management-submenu, #innovative-products-submenu, #new-age-solutions-submenu {
+      left: 20px;
+      top: 100%;
+      border: 1px solid #8b8b8b;
+  }
+}
+

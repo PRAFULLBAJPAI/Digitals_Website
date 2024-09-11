@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Digitals India Security Pvt. Ltd.</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        
+        <link rel="stylesheet" href="fonts/DMSans.css">
+       <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+    
+
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+            <div class="container">
+                <div class="row gx-0 align-items-center">
+                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                        <div class="d-flex flex-wrap">
+                           
+                            <div class="ps-3">
+                                <a href="mailto:info@digitalsindia.com" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>sales1@digitalsindia.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end">
+                        <div class="d-flex justify-content-end">
+                            <div class="d-flex border-end border-primary pe-3">
+                                <a class="btn p-0 text-primary me-3" href="https://www.facebook.com/DigitalsIndia/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn p-0 text-primary me-3" href="https://www.instagram.com/digitalsindia/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="btn p-0 text-primary me-0" href="https://www.linkedin.com/company/digitals-india-security-products-p-ltd/posts/?feedView=all" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="dropdown ms-3">
+                                <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fas fa-globe-europe text-primary me-2"></i> English</small></a>
+                                <div class="dropdown-menu rounded">
+                                    <a href="#" class="dropdown-item">English</a>
+                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+
+         <!--Enquiry Modal Search Start -->
+         <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered"> <!-- Smaller and centered modal -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="enquiryModalLabel">Enquiry Form</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="enquiryForm" action="send_enquiryForm.php" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Modal Search End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light"> 
+                    <a href="#" class="navbar-brand p-0">
+                        <img src="img/logo.png" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-0 mx-lg-auto">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About Us</a>
+    
+                            <!-- Products Dropdown -->
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="productsDropdown" data-bs-toggle="dropdown">
+                                    Products
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                                    <!-- CCTV Surveillance with Submenu -->
+                                    <a href="#" id="cctv" class="dropdown-item">CCTV Surveillance System</a>
+                                    <div id="cctv-submenu" class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">IP based Surveillance System</a>
+                                        <a href="#" class="dropdown-item">Design & Engineering for Large Scale Project
+                                            </a>
+                                        
+                                    </div>
+                                    
+                                    <!-- Fire Safety Solutions with Submenu -->
+                                    <a href="#" id="fire-safety" class="dropdown-item">Fire Safety Solutions</a>
+                                    <div id="fire-safety-submenu" class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">IP Based Fire Alarm System</a>
+                                        <a href="#" class="dropdown-item">Semi Addressable Fire Alarm System</a>
+                                        <a href="#" class="dropdown-item">Fire Alarm Sensors and Accessories</a>
+                                    </div>
+    
+                                    <!-- Intrusion Detection with Submenu -->
+                                    <a href="#" id="intrusion-detection" class="dropdown-item">Intrusion Detection</a>
+                                    <div id="intrusion-detection-submenu" class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">IP Based Intruder Alarm Systems</a>
+                                        <a href="#" class="dropdown-item">Integrated Alarm Systems</a>
+                                        <a href="#" class="dropdown-item">Security Alarm Sensors and Accessories</a>
+                                    </div>
+    
+                                    <!-- Entrance Management with Submenu -->
+                                    <a href="#" id="entrance-management" class="dropdown-item">Entrance Management</a>
+                                    <div id="entrance-management-submenu" class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Access Control Systems</a>
+                                        <a href="#" class="dropdown-item">Visitor Management</a>
+                                        <a href="#" class="dropdown-item">Time Attendance Software</a>
+                                        <a href="#" class="dropdown-item">Handheld and Door Frame Metal Detectors</a>
+
+                                    </div>
+    
+                                    <!-- Innovative Products with Submenu -->
+                                    <a href="#" id="innovative-products" class="dropdown-item">Innovative Products</a>
+                                    <div id="innovative-products-submenu" class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Autodialers</a>
+                                        <a href="#" class="dropdown-item">Smart Shutter Guard</a>
+                                        <a href="#" class="dropdown-item">Electronic Time Lock</a>
+                                        <a href="#" class="dropdown-item">LED Searchlights</a>
+                                        <a href="#" class="dropdown-item">Guard Monitoring System</a>
+
+
+                                    </div>
+    
+                                    <!-- New Age Solutions with Submenu -->
+                                    <a href="#" id="new-age-solutions" class="dropdown-item">New Age Solutions</a>
+                                    <div id="new-age-solutions-submenu" class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Health Monitoring Solution</a>
+                                        <a href="#" class="dropdown-item">Central Monitoring Solution</a>
+                                        <a href="#" class="dropdown-item">Security Mobile App</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Solutions Dropdown -->
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                    Solutions
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Corporates and Enterprises</a>
+                                    <a href="#" class="dropdown-item">Educational Institutions</a>
+                                    <a href="#" class="dropdown-item">High Value Goods</a>
+                                    <a href="#" class="dropdown-item">Hospital and Pharmaceutical</a>
+                                    <a href="#" class="dropdown-item">Industrials</a>
+                                    <a href="#" class="dropdown-item">Shopping and Retail</a>
+                                </div>
+                            </div>
+    
+                            <!-- Support Dropdown -->
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                    Support
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Raise Complain</a>
+                                    <a href="#" class="dropdown-item">Blog</a>
+                                </div>
+                            </div>
+    
+                            <a href="contactUs.html" class="nav-item nav-link">Contact Us</a>
+                            <a href="#" class="nav-item nav-link">Careers</a>
+                        </div>
+                    </div>
+    
+                    <!-- Call to action -->
+                    <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+                        <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
+                            <i class="fa fa-phone-alt fa-2x"></i>
+                            <div class="position-absolute" style="top: 7px; right: 12px;">
+                                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                            </div>
+                        </a>
+                        <div class="d-flex flex-column ms-3">
+                            <span>Call to Our Experts</span>
+                            <a href="#"><span class="text-dark">+ 91 9212787332</span></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    
+    
+        <!-- Navbar & Hero End -->
+        <div class="enquire-btn">
+            <button id="enquireBtn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquire Now</button>
+          </div>
+
+        
+        <!-- Main Start -->
+        <div class="header-carousel owl-carousel">
+            <div class="header-carousel-item bg-primary">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-7 animated fadeInLeft">
+                                <div class="text-sm-center text-md-start">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To Digitals</h4>
+                                    <h1 class="display-1 text-white mb-4">Become Digitals Channel Partner</h1>
+                                    <h4 class="text-white text-uppercase fw-bold mb-4">Grow Your Business 2X</h4>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-5 animated fadeInRight">
+                                <div class="calrousel-img" style="object-fit: cover;">
+                                    <img src="img/image_digitals_grow.png" class="img-fluid w-100" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <!-- Main End -->
+
+        
+
+        <!-- Feature Start -->
+        <div class="container-fluid feature bg-light py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Features</h4>
+                    <h1 class="display-4 mb-4">Become Bulletproof for the Future</h1>
+                    
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-12 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.2s" >
+                        <div class="feature-item p-4 pt-0" style="min-height: 320px;">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fa fa-wrench fa-3x"></i>
+                            </div>
+                            <h4 class="mb-4">Direct From OEM</h4>
+                            <p class="mb-4">Sourcing directly from the OEM offers improved
+                                control over margins and customization options.
+                                Explore a selection of over 100 + “ MADE IN
+                                INDIA” Electronic Security Products.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4 pt-0" style="min-height: 320px;">
+                            <div class="feature-icon p-4 mb-4">
+                                
+                                <i class="fa fa-arrow-up fa-3x"></i>
+                            </div>
+                            <h4 class="mb-4">Advantage Over Competition</h4>
+                            <p class="mb-4">Our products are certified to meet the
+                                highest quality standards and are
+                                recognized by leading institutions, which
+                                are among our esteemed clients.</p>
+                          
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="feature-item p-4 pt-0" style="min-height: 320px;">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fa fa-users fa-3x"></i>
+                            </div>
+                            <h4 class="mb-4">Technical Support</h4>
+                            <p class="mb-4">Partner with a company renowned for
+                                delivering exceptional customer service. If
+                                top banks trust us, you can too.   
+                            </p>
+                          
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+        <!-- About Start -->
+        <div class="container-fluid bg-light about pb-5">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="about-item-content bg-white rounded p-5 h-100">
+                            <h4 class="text-primary">About Us</h4>
+                            <h1 class="display-4 mb-4">High Range of Exploring Protection</h1>
+                            <p>We are an Indian company engaged in advanced electronic security
+                                solutions. We have served various clients from various verticals like
+                                Banking and financial institution, Military and government Institutions ,
+                                Large and medium scale companies. We deliver results that exceed our
+                                clients' expectations, and we are committed to providing the highest
+                                level of customer service with our nation wide presence.</p>
+                           
+                            <p class="text-dark"><i class="far fa-dot-circle text-primary me-3"></i>Technical Trainings</p>
+                            <p class="text-dark"><i class="far fa-dot-circle text-primary me-3"></i>No Minimum Quantity</p>
+                            <p class="text-dark"><i class="far fa-dot-circle text-primary me-3"></i>On-site Assistance</p>
+                            <div style="margin-top: 30px;"></div>
+                            <div class="col-12">
+                                <div class="counter-item bg-light rounded p-3 h-100">
+                                    
+                                    <h5 class="mb-0 text-dark">All Our Products are indigeniously developed
+                                        at our R&D and Manufacturing Unit at Noida.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="bg-white rounded p-3 h-100">
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-12">
+                                    <div class="rounded bg-light">
+                                        <img src="img/cctv.jpg" class="img-fluid rounded w-100 h-50" alt="">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">100</span>
+                                            <span class="h1 fw-bold text-primary">+</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark">Made in India Products</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">20</span>
+                                            <span class="h1 fw-bold text-primary">+</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark">Service Centers Across India</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">2000</span>
+                                            <span class="h1 fw-bold text-primary">+</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark">Active Sites Under Maintenance</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">44</span>
+                                            <span class="h1 fw-bold text-primary">+</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark">Years of Industry Expertise</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+       
+       
+    
+        <!-- Milestones Start -->
+        <div class="container-fluid blog py-5">
+            <div class="container py-5">
+              <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Our Journey</h4>
+                <h1 class="display-4 mb-4">Key Milestones</h1>
+                <p class="mb-0">
+                    Here are some of our Key Milestones from the
+                    journey of over 44 years.
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 col-xl-12 wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="timeline"> 
+                    <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                      <div class="timeline__event__icon ">
+                        <i class="fas fa-birthday-cake"></i>
+                  
+                      </div>
+                      <div class="timeline__event__date">
+                        1981
+                      </div>
+                      <div class="timeline__event__content ">
+                        <div class="timeline__event__title">
+                          Foundation Year
+                        </div>
+                        <div class="timeline__event__description">
+                          <p>Developed and manufactured the
+                            First Indian Electronic Token
+                            Display system for Banks</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+                      <div class="timeline__event__icon">
+                        <i class="fas fa-user-secret"></i>
+                  
+                      </div>
+                      <div class="timeline__event__date">
+                       1983
+                      </div>
+                      <div class="timeline__event__content">
+                        <div class="timeline__event__title">
+                            India’s 1st Security System
+                        </div>
+                        <div class="timeline__event__description">
+                          <p>India’s First indigenously designed
+                            Security Alarm System to deter intruders
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="timeline__event animated fadeInUp delay-2s timeline__event--type1">
+                        <div class="timeline__event__icon">
+                            <i class="fas fa-shield-alt"></i>
+                    
+                        </div>
+                        <div class="timeline__event__date">
+                            2016
+                        </div>
+                        <div class="timeline__event__content">
+                          <div class="timeline__event__title">
+                            India’s 1st Electronic Time
+                            Lock System
+                          </div>
+                          <div class="timeline__event__description">
+                            <p>First Electronic Time Lock System, to
+                                help secure currency chests.
+                              </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+                        <div class="timeline__event__icon">
+                            <i class="fas fa-dungeon"></i>
+                    
+                        </div>
+                        <div class="timeline__event__date">
+                            2019
+                        </div>
+                        <div class="timeline__event__content">
+                          <div class="timeline__event__title">
+                            Standalone Shutter Guard
+                          </div>
+                          <div class="timeline__event__description">
+                            <p>First Stand-alone Electronic Shutter
+                                Guard System with remote alarm to
+                                monitor any attempts to tamper
+                                with shutters or locks.
+                              </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="timeline__event animated fadeInUp delay-1s timeline__event--type1">
+                        <div class="timeline__event__icon">
+                            <i class="fas fa-bell"></i>
+                    
+                        </div>
+                        <div class="timeline__event__date">
+                            2021
+                        </div>
+                        <div class="timeline__event__content">
+                          <div class="timeline__event__title">
+                            India’s 1st IP Based Security
+                            Alarm System
+                          </div>
+                          <div class="timeline__event__description">
+                            <p>First IP Based Security Alarm System
+                                enabling remote monitoring, control
+                                and reports of security alarm system.</p>
+                          </div>
+                    
+                        </div>
+                      </div>
+
+                    <div class="timeline__event animated fadeInUp delay-1s timeline__event--type2">
+                      <div class="timeline__event__icon">
+                        <i class="fas fa-fire-alt"></i>
+                  
+                      </div>
+                      <div class="timeline__event__date">
+                        2022
+                      </div>
+                      <div class="timeline__event__content">
+                        <div class="timeline__event__title">
+                            IP Based Fire
+                            Alarm System
+                        </div>
+                        <div class="timeline__event__description">
+                          <p>First IP Based Fire Alarm
+                            System</p>
+                        </div>
+                  
+                      </div>
+                    </div>
+                    <div class="timeline__event animated fadeInUp timeline__event--type3">
+                      <div class="timeline__event__icon">
+                        <i class="fas fa-laptop-medical"></i>
+                  
+                      </div>
+                      <div class="timeline__event__date">
+                        2023
+                      </div>
+                      <div class="timeline__event__content">
+                        <div class="timeline__event__title">
+                            Successful launch of Health
+                            Monitoring system
+                        </div>
+                        <div class="timeline__event__description">
+                          <p>First remote diagnostics for
+                            electronic systems- DI-HMS.
+                            Compatible with any on-site
+                            security and fire gadgets without
+                            any heavy Capex costs. High-grade data security meets
+                            enhanced compliance norms.
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        
+        <!-- Milestone End -->
+
+
+         <!-- Products Start -->
+         <div class="container-fluid service py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Products</h4>
+                    <h1 class="display-4 mb-4">We Provide Best Products</h1>
+                    <p class="mb-0">Products that are Designed for you</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <!-- Product Card 1 -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item d-flex flex-column h-100">
+                            <div class="service-img">
+                                <img src="img/CCTV-Surveillance.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fas fa-video fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4 flex-grow-1 d-flex flex-column justify-content-between">
+                                <div class="service-content-inner">
+                                    <a href="#" class="d-inline-block h4 mb-4">CCTV Surveillance</a>
+                                    <p class="mb-2">IP based Surveillance System</p>
+                                    <p class="mb-2">Project Design & Engineering for Large Scale Projects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item d-flex flex-column h-100">
+                            <div class="service-img">
+                                <img src="img/SECURITY-ALARM-SYSTEM.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="far fa-bell fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4 flex-grow-1 d-flex flex-column justify-content-between">
+                                <div class="service-content-inner">
+                                    <a href="#" class="d-inline-block h4 mb-4">Intrusion Detection</a>
+                                    <p class="mb-1">IP Based Intruder Alarm Systems</p>
+                                    <p class="mb-1">Integrated Alarm Systems</p>
+                                    <p class="mb-1">Security Alarm Sensors and Accessories</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item d-flex flex-column h-100">
+                            <div class="service-img">
+                                <img src="img/Fire-Detection-and-alarm-systems.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fas fa-fire-alt fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4 flex-grow-1 d-flex flex-column justify-content-between">
+                                <div class="service-content-inner">
+                                    <a href="#" class="d-inline-block h4 mb-4">Fire Safety Solutions</a>
+                                    <p class="mb-1">IP Based Fire Alarm System</p>
+                                    <p class="mb-1">Semi Addressable Fire Alarm System</p>
+                                    <p class="mb-1">Fire Alarm Sensors and Accessories</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item d-flex flex-column h-100">
+                            <div class="service-img">
+                                <img src="img/Access-Control-Time.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fas fa-fingerprint fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4 flex-grow-1 d-flex flex-column justify-content-between">
+                                <div class="service-content-inner">
+                                    <a href="#" class="d-inline-block h4 mb-4">Entrance Management</a>
+                                    <p class="mb-1">Access Control Systems</p>
+                                    <p class="mb-1">Visitor Management</p>
+                                    <p class="mb-1">Time Attendance Software</p>
+                                    <p class="mb-1">Handheld and Door Frame Metal Detectors</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 5 -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item d-flex flex-column h-100">
+                            <div class="service-img">
+                                <img src="img/Halogen-based.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="far fa-lightbulb fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4 flex-grow-1 d-flex flex-column justify-content-between">
+                                <div class="service-content-inner">
+                                    <a href="#" class="d-inline-block h4 mb-4">Innovative Products</a>
+                                    <p class="mb-1">Autodialers</p>
+                                    <p class="mb-1">Smart Shutter Guard</p>
+                                    <p class="mb-1">Electronic Time Lock</p>
+                                    <p class="mb-1">LED Searchlights</p>
+                                    <p class="mb-1">Guard Monitoring System</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 6 -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item d-flex flex-column h-100">
+                            <div class="service-img">
+                                <img src="img/newProducts.PNG" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fas fa-mobile-alt fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4 flex-grow-1 d-flex flex-column justify-content-between">
+                                <div class="service-content-inner">
+                                    <a href="#" class="d-inline-block h4 mb-4">New Age Solutions</a>
+                                    <p class="mb-1">Health Monitoring Solution</p>
+                                    <p class="mb-1">Central Monitoring Solution</p>
+                                    <p class="mb-1">Security Mobile App</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Products End -->
+
+     <!-- Team Start -->
+<div class="container-fluid bg-light team pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary pt-4">Our Clients</h4>
+            <p class="mb-0">Our esteemed clients include leading public sector banks, renowned financial institutions, various military and government organizations, prominent retail chains and warehouses, as well as a diverse range of small, medium, and large-scale industries.
+            </p>
+        </div>
+        <div class="owl-carousel team-carousel">
+            
+            <div class="team-item">
+                
+                    <img src="img/licLogo.jpg" class="img-fluid rounded-top w-100" alt="">
+                   
+                
+               
+            </div>
+            
+            <div class="team-item">
+                
+                    <img src="img/sbiLogo.png" class="img-fluid rounded-top w-100" alt="">
+                   
+                
+               
+            </div>
+            
+            <div class="team-item">
+                
+                    <img src="img/Bank-of-Baroda.jpg" class="img-fluid rounded-top w-100" alt="">
+                   
+                
+               
+            </div>
+            
+            <div class="team-item">
+                
+                    <img src="img/Bank-of-India-logo.jpg" class="img-fluid rounded-top w-100" alt="">
+                   
+                
+               
+            </div>
+           
+            <div class="team-item">
+                
+                    <img src="img/canaraLogo.jpeg" class="img-fluid  rounded-top w-100" alt="">
+                   
+                
+               
+            </div>
+           
+            <div class="team-item">
+              
+                    <img src="img/pnbLogo.png" class="img-fluid rounded-top w-100" alt="">
+                   
+                
+               
+            </div>
+            <div class="team-item">
+                
+                    <img src="img/centralbankofindiaLogo.jpg" class="img-fluid rounded-top w-100" alt="">
+                   
+                
+               
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+
+<!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid testimonial pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 pt-4 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Testimonial</h4>
+                    <h1 class="display-4 mb-4">What Our Customers Are Saying</h1>
+                    <p class="mb-0">We take pride in the enduring relationships we have built with military organizations, financial institutions, and retail giants.
+                    </p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="img/cta-bg.jpg" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Assitant General Manager</h4>
+                                    <p class="mb-3">Oriental Bank of Commerce</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="mb-0">The service of Digitals India has been found good and up to the need of the bank. They have successfully carried out the work of Installation & Maintenance and they continue with further supply, installation & Maintenance of our CCTV surveillance systems.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="img/cta-bg.jpg" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">MANAGER GMD</h4>
+                                    <p class="mb-3">CENTRAL BANK OF INDIA</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                    </div>
+                                    <p class="mb-0">Digitals India has been impaneled with us from past 3 years and we never had any adverse observations so far regarding their installation and maintenance of services. They continue to be our vendor for installation and maintenance of services i.e. INSTALLATION.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="img/cta-bg.jpg" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">CHIEF MANAGER (SECURITY)</h4>
+                                    <p class="mb-3">UCO BANK</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="mb-0">Digitals India has installed Integrated Alarm system and CCTV in our 130 branches of our bank. Their service network & post-installation / AMC services are good. They can be relied upon for carrying any major and bulk Installation/ AMC for any industry.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Testimonial End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-xl-9">
+                        <div class="mb-5">
+                            <div class="row g-4">
+                                <div class="col-md-6 col-lg-6 col-xl-5">
+                                    <div class="footer-item">
+                                        <a href="index.html" class="p-0">
+                                            
+                                            <img src="img/logo.png" alt="Logo" width="150">
+                                       </a>
+                                        <p class="text-white mb-4">Backed by quality and proven by experience, Digitals India Security Products Pvt Ltd is ISO 9001:2015 certified and has over three decades of experience in the security industry.</p>
+                                        <div class="footer-btn d-flex">
+                                            <a class="btn btn-md-square rounded-circle me-3" href="https://www.facebook.com/DigitalsIndia/"><i class="fab fa-facebook-f"></i></a>      
+                                            <a class="btn btn-md-square rounded-circle me-3" href="https://www.instagram.com/digitalsindia/"><i class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-md-square rounded-circle me-0" href="https://www.linkedin.com/company/digitals-india-security-products-p-ltd/posts/?feedView=all"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-lg-5 col-xl-3">
+                                    <div class="footer-item">
+                                        <h4 class="text-white mb-4">Quick Links</h4>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Home</a>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Products</a>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Blogs</a>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-7 col-lg-7 col-xl-3">
+                                    <div class="footer-item">
+                                        <h4 class="text-white mb-4">Solutions</h4>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Corporates & Enterprises</a>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Educational Institutions</a>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Financial Solutions</a>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> High Value Goods</a>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Hospitals & Pharmaceutical</a>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Industrials</a>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Shopping & Retail</a>
+
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                            <div class="row g-0">
+                                <div class="col-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-4 col-xl-5">
+                                            <div class="d-flex">
+                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                                                </div>
+                                                <div>
+                                                    <h4 class="text-white">Head Office</h4>
+                                                    <p class="mb-0">
+                                                        Digitals India Security Products Pvt. Ltd. C-22, Sector-63, Noida, Gautam Buddha Nagar, Uttar Pradesh, 201301, India</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-4">
+                                            <div class="d-flex">
+                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                    <i class="fas fa-envelope fa-2x"></i>
+                                                </div>
+                                                <div>
+                                                    <h4 class="text-white">Mail Us</h4>
+                                                    <p class="mb-0">info@digitalsindia.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-3">
+                                            <div class="d-flex">
+                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                    <i class="fa fa-phone-alt fa-2x"></i>
+                                                </div>
+                                                <div>
+                                                    <h4 class="text-white">Telephone</h4>
+                                                    <p class="mb-0"> +91 120-4202273, <br>+91-9355830975</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-3">
+                        <div class="footer-item">
+                            
+                            <div class="d-flex flex-shrink-0">
+                                <div class="footer-btn">
+                                    <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
+                                        <i class="fa fa-phone-alt fa-2x"></i>
+                                        <div class="position-absolute" style="top: 2px; right: 12px;">
+                                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column ms-3 flex-shrink-0">
+                                    <span>Call to Our Experts</span>
+                                    <a href="tel:+ 0123 456 7890"><span class="text-white">+ 91 9212787332</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-end mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Digitals India Security Products Pvt. Ltd </a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-body">
+                       
+                        Designed By <a class="border-bottom text-white" href="">Doritech</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+        
+    </body>
+
+</html>
